@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const userController = require("../controllers/userController");
 const { body } = require("express-validator");
-const validation = require("../handlers/validationHanlder");
+const validation = require("../handlers/validationHandler");
 const tokenHandler = require("../handlers/tokenHandler");
 const User = require("../models/user");
 

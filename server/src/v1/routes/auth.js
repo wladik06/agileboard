@@ -31,10 +31,10 @@ router.post(
 	"/login",
 	body("username")
 		.isLength({ min: 8 })
-		.withMessage("username must contain at least 8 characters"),
+		.withMessage("Username must contain at least 8 characters"),
 	body("password")
 		.isLength({ min: 8 })
-		.withMessage("password must contain at least 8 characters"),
+		.withMessage("Password must contain at least 8 characters"),
 	validation.validate,
 	userController.login
 );

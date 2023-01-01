@@ -39,7 +39,7 @@ const Signup = () => {
 		}
 		if (password !== confirmPassword) {
 			err = true;
-			setConfirmPasswordErrText("Confirm password does not match");
+			setConfirmPasswordErrText("Passwords does not match");
 		}
 
 		if (err) return;
